@@ -38,7 +38,7 @@ The workshop agenda includes an introduction and overview, a session on serverle
 
 Cool Revive Technologies specializes in breathing new life into old refrigerators. By refurbishing and optimizing these appliances, the company contributes to sustainability, reduces waste, and provides affordable solutions for consumers. To date, Cool Revive has relied on paper-based solutions to handle their remanufacturing processes. But as they continue to grow, they need a better, more automated process to handle the overall workflow. Not only will this ease the management load of the remanufacturing process, it will improve the company's efficiency which in the end will produce even more eco-friendly products.
 
-Read me more about the [background information](background-info\README.md) for the labs scenario.
+Read me more about the [background information](background-info/README.md) for the labs scenario.
 
 ## Slides
 
