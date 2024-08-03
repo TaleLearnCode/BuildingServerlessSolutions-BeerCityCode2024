@@ -233,7 +233,22 @@ To aid the different components in writing and reading the different messages, w
 
 9. Right-click the **Responses** project and click **Add** > **New folder**; name the folder Responses.
 
-10. Right-click the **Responses** folder and click **Add** > **New Item**; select Interface; name the interface **IResponse.cs**; and click the **Add** button. Replace the default text with:
+10. Right-click the **Responses** folder and click **Add > Class**; name the class **ResponseType.cs**; and click the **Add** button. Replace the default text with:
+
+    ```c#
+    namespace Remanufacturing.Responses;
+    
+    public enum ResponseType
+    {
+    	ProblemDetails,
+    	StandardResponse,
+    	Response
+    }
+    ```
+
+    
+
+11. Right-click the **Responses** folder and click **Add** > **New Item**; select Interface; name the interface **IResponse.cs**; and click the **Add** button. Replace the default text with:
 
    ```c#
    using System.Net;

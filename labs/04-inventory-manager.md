@@ -314,7 +314,7 @@ The next section will create a Service Bus topic subscription-triggered Azure Fu
 
 12. Open the **Function1.cs** file and place your cursor on the function's name (`Function1`) .
 
-13. Hit the **Ctrl** + **R** + **R** key combination and rename the class to `GetNextCoreHandler`, ensuring that the `Rename symbol's file` option is selected..
+13. Hit the **Ctrl** + **R** + **R** key combination and rename the class to `OrderNextCoreHandler`, ensuring that the `Rename symbol's file` option is selected..
 
 14. Replace the default **OrderNextCoreHandler.cs** contents with:
 

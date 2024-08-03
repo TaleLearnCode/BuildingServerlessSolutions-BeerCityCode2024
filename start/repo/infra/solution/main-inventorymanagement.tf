@@ -37,6 +37,25 @@ resource "azurerm_cosmosdb_account" "inventory_manager" {
   tags = local.tags
 }
 
+resource "azurerm_role_definition" "cosmos_read_write" {
+  name        = "Cosmos DB Account Read/Write"
+  scope       = data.azurerm_subscription.current.id
+  description = "Provides Terraform service principals the ability to manage role assignments."
+
+  permissions {
+    actions     = [
+      "Microsoft.DocumentDB/databaseAccounts/services/read",
+      "Microsoft.DocumentDB/databaseAccounts/services/write",
+      "Microsoft.DocumentDB/databaseAccounts/services/delete"
+    ]
+    not_actions = []
+  }
+
+  assignable_scopes = [
+    data.azurerm_subscription.current.id,
+  ]
+}
+
 resource "azurerm_role_assignment" "search_cosmos" {
   scope                = azurerm_cosmosdb_account.inventory_manager.id
   role_definition_name = "Cosmos DB Account Read/Write"

@@ -77,7 +77,7 @@ A Shared Access Signature (SAS) token is a security mechanism used in Azure clou
    | Field        | Value                                                |
    | ------------ | ---------------------------------------------------- |
    | Name         | next-core-in-transit-sas-token                       |
-   | Display name | Next Core in Transit SAS Token                       |
+   | Display name | next-core-in-transit-sas-token                       |
    | Type         | Secret                                               |
    | Value        | The **SAS Token** generated in the previous section. |
 
